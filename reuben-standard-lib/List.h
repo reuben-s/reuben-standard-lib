@@ -43,8 +43,8 @@ void List<T>::append_item(T item)
 		this->array_max_size *= 2;
 
 		T* new_loc = (T*)realloc(this->internal_array, array_max_size * sizeof(T));
-		if (new_loc == NULL) // realloc failed, throw error
-			throw std::exception("realloc failed");
+		if (new_loc == NULL) // realloc failed, throw bad_alloc
+			throw std::bad_alloc();
 		else
 			this->internal_array = new_loc; // asign new array location to internal_array
 
