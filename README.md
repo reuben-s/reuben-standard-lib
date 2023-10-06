@@ -3,3 +3,4 @@ Custom implementation of some of the data types and utilities from the C++ stand
 
 Implemented:
 - List
+- Linked list
