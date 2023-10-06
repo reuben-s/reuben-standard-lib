@@ -51,7 +51,7 @@ void List<T>::append_item(T item)
 	}
 
 	this->internal_array[length] = item;
-	this->length += 1;
+	this->length ++;
 }
 
 template<typename T>
